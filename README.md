@@ -1,19 +1,26 @@
-CoinCollectionGame is a dynamic programming-based game where two players take turns selecting coins from either end of a list to maximize their score. It demonstrates dynamic programming principles, with a visually appealing user interface built using JavaFX, complete with animations and smooth transitions, making the gameplay engaging and interactive.
+# CoinCollectionGame
 
-Dynamic Programming Explanation:
-The game uses dynamic programming to determine the optimal coin collection strategy. The state dp[i, j] represents the maximum number of coins a player can collect from the subarray of coins between indices i and j.
+**CoinCollectionGame** is a dynamic programming-based game where two players take turns selecting coins from either end of a list to maximize their score. The game demonstrates dynamic programming principles with a **visually appealing user interface** built using **JavaFX**, complete with **animations** for smooth and engaging gameplay.
 
-Base Case 1: If there’s only one coin (i == j), the maximum number of coins is simply coins[i].
+---
 
-Base Case 2: For two adjacent coins (|i - j| = 1), the maximum is the larger of coins[i] or coins[j].
+## Dynamic Programming Explanation
 
-Recursive Case: For more than two coins (i < j), the player has two choices:
+The game uses **dynamic programming** to determine the optimal coin collection strategy. The state `dp[i, j]` represents the **maximum number of coins** a player can collect from the subarray of coins between indices `i` and `j`.
 
-Pick the coin at index i, then the second player plays optimally on the subarray [i+1, j].
+### Base Cases
+1. **Single Coin (`i == j`)**:
+   - If there's only one coin, the maximum number of coins you can collect is simply `coins[i]`.
+   
+2. **Two Adjacent Coins (`|i - j| = 1`)**:
+   - If there are two adjacent coins, the maximum is the larger of the two:  
+     `Max{coins[i], coins[j]}`.
 
-Pick the coin at index j, then the second player plays optimally on the subarray [i, j-1]. The value of dp[i, j] is the maximum coins the current player can collect between these two choices.
-
-Error Condition: If i > j, the subarray is invalid.
+### Recursive Case: More Than Two Coins (`i < j`)
+If there are more than two coins, the player has two choices:
+- **Pick the coin at index `i`**: The remaining coins are from index `i+1` to `j`. The second player will then play optimally on this subarray. The current player collects `coins[i]` plus the sum of the remaining coins minus the optimal move of the second player (`dp[i+1, j]`).
+  
+- **Pick the coin at index `j`**: The remaining coins are from index `i` to `j-1`. The second player plays optimally on this subarray, and the current player collects `coins[j]` plus the
 
 
 ![image](https://github.com/user-attachments/assets/9d300245-552f-472f-87ae-dd4cddf79ae7)
