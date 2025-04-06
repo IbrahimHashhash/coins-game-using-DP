@@ -1,0 +1,63 @@
+.button {
+-fx-border-color: rgba(42, 79, 139,1);
+-fx-background-color: rgb(224, 242, 249);
+-fx-border-width: 3.5px;
+-fx-text-fill: rgba(42, 79, 139, 1);
+-fx-font-weight: bold;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 1, 1);
+-fx-pref-width:200px;
+-fx-pref-height:60px;
+-fx-font-size: 20px;
+-fx-transition: all 2s ease;
+-fx-opacity: 0.8;
+}
+label {
+-fx-text-fill: rgba(42, 79, 139,1);
+-fx-font-weight: bold;
+-fx-font-size: 20px;
+-fx-font-style: italic;
+
+}
+.button:hover {
+    -fx-opacity: 1;
+    -fx-background-color: rgba(42, 79, 139,1);
+    -fx-effect: dropshadow(gaussian, rgba(42, 79, 139,0.1), 10, 0.5, 1, 1);
+    -fx-text-fill: white;
+}
+.text-field {
+-fx-border-color: rgba(42, 79, 139,1);
+-fx-background-color: rgb(224, 242, 249);
+-fx-border-width: 3.5px;
+-fx-text-fill: rgba(42, 79, 139, 1);
+-fx-font-weight: bold;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 1, 1);
+-fx-pref-width:100px;
+-fx-pref-height:50px;
+-fx-font-size: 32px;
+    -fx-padding: 8 0 8 0;
+ -fx-alignment: center;
+
+-fx-opacity: 0.8;
+
+}
+.button:pressed {
+-fx-opacity: 0.6;
+-fx-border-color: rgba(42, 79, 139,0.1);
+
+}
+.label {
+-fx-text-fill: Black;
+-fx-font-weight: bold;
+-fx-font-size: 19px;
+-fx-font-style: italic;
+
+}
+
+.root {
+    -fx-font-family: "Monospaced";
+    -fx-background-color: rgba(224, 242, 249,0.5);
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(224, 242, 249,0.5), 10, 0.5, 1, 1);
+
+}
+

@@ -1,0 +1,197 @@
+.button {
+-fx-border-color: rgba(42, 79, 139,1);
+-fx-background-color: rgb(224, 242, 249);
+-fx-border-width: 3.5px;
+-fx-text-fill: rgba(42, 79, 139, 1);
+-fx-font-weight: bold;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 1, 1);
+-fx-pref-width:260px;
+-fx-pref-height:100px;
+-fx-font-size: 32px;
+-fx-transition: all 2s ease;
+-fx-opacity: 0.8;
+}
+#title {
+-fx-text-fill: rgba(42, 79, 139,1);
+-fx-font-weight: bold;
+-fx-font-size: 45px;
+}
+#guide {
+-fx-text-fill: rgba(42, 79, 139,1);
+-fx-font-weight: bold;
+-fx-font-size: 20px;
+-fx-font-style: italic;
+
+}
+.label {
+-fx-text-fill: rgba(42, 79, 139,1);
+-fx-font-weight: bold;
+-fx-font-size: 50px;
+-fx-font-style: italic;
+
+}
+.coin-label {
+-fx-border-color: rgba(42, 79, 139,1);
+-fx-background-color: linear-gradient(to right, rgba(42, 79, 139, 1), rgb(224, 242, 249));
+-fx-border-width: 1px;
+-fx-text-fill: white;
+-fx-font-weight: bold;
+-fx-background-radius: 30px;
+-fx-border-radius: 30px;
+-fx-padding-left: 10px;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 1, 1);
+-fx-pref-width:60px;
+-fx-pref-height:60px;
+-fx-font-size: 20px;
+-fx-transition: all 2s ease;
+-fx-opacity: 0.9;
+}
+
+.coin-label: hover {
+    -fx-opacity: 1;
+    -fx-background-color: rgb(197, 158, 1);
+    -fx-border-color: yellow;
+    -fx-effect: dropshadow(gaussian, rgba(42, 79, 139,0.1), 10, 0.5, 1, 1);
+    -fx-text-fill: yellow;
+
+}
+
+.coin-label:pressed {
+-fx-opacity: 0.6;
+-fx-border-color: rgba(42, 79, 139,0.1);
+
+}
+
+.button:hover {
+    -fx-opacity: 1;
+    -fx-background-color: rgba(42, 79, 139,1);
+    -fx-effect: dropshadow(gaussian, rgba(42, 79, 139,0.1), 10, 0.5, 1, 1);
+    -fx-text-fill: white;
+}
+.text-field {
+-fx-border-color: rgba(42, 79, 139,1);
+-fx-background-color: rgb(224, 242, 249);
+-fx-border-width: 3.5px;
+-fx-text-fill: rgba(42, 79, 139, 1);
+-fx-font-weight: bold;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 1, 1);
+-fx-pref-width:260px;
+-fx-pref-height:100px;
+-fx-font-size: 24px;
+-fx-opacity: 0.8;
+}
+.button:pressed {
+-fx-opacity: 0.6;
+-fx-border-color: rgba(42, 79, 139,0.1);
+
+}
+
+.root {
+    -fx-font-family: "Monospaced";
+}
+.player-pane {
+    -fx-background-color: rgb(224, 242, 249);
+    -fx-opacity: 0.8;
+    -fx-border-color: rgba(42, 79, 139, 1);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 200px;
+    -fx-padding: 10px 50px;
+}
+.player-pane: hover {
+    -fx-background-color: orange;
+    -fx-border-color: orange;
+
+}
+.player-pane: pressed {
+  -fx-opacity: 0.6;
+}
+/* Customize TableView */
+/* General TableView Styling */
+.table-view {
+    -fx-border-color: rgba(42, 79, 139, 1); /* Border matches button border */
+    -fx-background-color: rgb(224, 242, 249); /* Matches button background */
+    -fx-border-width: 2px; /* Slim border width */
+    -fx-font-family: "Segoe Print"; /* Font consistency */
+    -fx-font-size:16px;
+    -fx-opacity: 0.9; /* Slight transparency */
+        -fx-alignment: center; /* Center the text horizontally and vertically */
+}
+
+/* Table rows */
+.table-row-cell {
+    -fx-alignment: center; /* Center the text horizontally and vertically */
+    -fx-background-color: transparent; /* Transparent background for rows */
+    -fx-text-fill: rgba(42, 79, 139, 1); /* Text color matches button text */
+    -fx-font-weight: bold; /* Bold row text */
+     -fx-background-radius: 20px;
+     -fx-border-radius:20px;
+
+}
+
+/* Alternating rows */
+.table-row-cell:odd {
+    -fx-background-color: rgb(210, 230, 240); /* Light blue for odd rows */
+}
+
+.table-row-cell:even {
+    -fx-background-color: rgb(224, 242, 249); /* Slightly darker blue for even rows */
+}
+
+/* Selected row */
+.table-row-cell:selected {
+    -fx-background-color: rgba(42, 79, 139, 1); /* Strong blue for selection */
+    -fx-text-fill: white; /* White text for selected rows */
+}
+
+/* Hover effect */
+.table-row-cell:hover {
+    -fx-background-color: rgb(197, 158, 1); /* Golden hover effect */
+    -fx-text-fill: white; /* White text on hover */
+}
+
+/* Focused row */
+.table-row-cell:focused {
+    -fx-background-color: rgba(42, 79, 139, 0.5); /* Slightly transparent focus color */
+}
+
+/* Vertical scrollbar styling */
+.table-view .scroll-bar:vertical {
+    -fx-background-color: linear-gradient(to bottom, rgba(42, 79, 139, 1), rgb(224, 242, 249));
+    -fx-background-radius: 5px;
+}
+
+/* Horizontal scrollbar styling */
+.table-view .scroll-bar:horizontal {
+    -fx-background-color: linear-gradient(to right, rgba(42, 79, 139, 1), rgb(224, 242, 249));
+    -fx-background-radius: 5px;
+}
+
+/* Scrollbar thumb */
+.table-view .scroll-bar .thumb {
+    -fx-background-color: rgba(42, 79, 139, 0.8); /* Thumb matches the palette */
+}
+
+/* Remove table header */
+/* Remove TableView Header Background */
+.table-view .column-header-background {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-padding: 0; /* Remove padding */
+    -fx-pref-height: 0px; /* Set height to zero */
+    -fx-border-width: 0px; /* Remove borders */
+    -fx-opacity: 0;
+}
+
+/* Remove TableView Header Text */
+.table-view .column-header .label {
+    -fx-opacity: 0; /* Make header text invisible */
+    -fx-font-size: 0px; /* Remove font size to ensure no space is occupied */
+    -fx-pref-height: 0px; /* Remove header height */
+    -fx-padding: 0; /* Remove padding */
+    -fx-border-width: 0; /* Remove borders */
+        -fx-opacity: 0;
+}
+.table-view .table-column {
+    -fx-pref-width: 90px; /* Adjust the width of the column */
+}
